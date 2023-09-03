@@ -1,18 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Link} from "react-router-dom"
-export default class Navbar extends Component {
 
- 
-  
-  
-
-  render() {
-  let {toggle,line}=this.props;
+const Navbar=(props)=>{
 
     return (
 
         <div >
-      <nav  className="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <nav  className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">TrendingTimes</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +37,8 @@ export default class Navbar extends Component {
        
       </ul>
       <div className="form-check form-switch text-light">
-  <input className="form-check-input" onClick={toggle} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{line} dark mode</label>
+  <input className="form-check-input" onClick={props.toggle} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.line} dark mode</label>
 </div>
       
     </div>
@@ -53,4 +47,5 @@ export default class Navbar extends Component {
     </div>
     )
   }
-}
+
+export default Navbar

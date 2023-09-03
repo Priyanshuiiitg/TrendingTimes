@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Priyanshuiiitg.github.io/TrendingTimes",
+  
   "name": "newsapp",
   "version": "0.1.0",
   "private": true,
@@ -14,11 +14,11 @@
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
     "react-top-loading-bar": "^2.3.1",
+    "vercel": "^30.2.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
